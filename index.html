@@ -1,0 +1,158 @@
+<!------  LAYOUT  ------>
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- <meta charset="utf-8" /> -->
+		<title>Home &hearts; GoogView</title>
+		<script src="https://code.jquery.com/jquery-1.10.2.js" defer></script>
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js" defer></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js" defer></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js" defer></script>
+		<script src="./Content/js/lib/jquery.cookie.js" defer></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+		
+		<link rel="stylesheet" href="./Content/css/site.css" />
+		<script src="./Content/js/app.js" defer></script>
+		
+		<link rel="shortcut icon" href="./Content/img/favicon.ico" />
+	</head>
+	<body>
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Title</h4>
+					</div>
+					<div class="modal-body">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper dictum sagittis. Morbi id eros ligula. Suspendisse quis urna a purus blandit ultrices et venenatis ante. Ut mollis viverra nunc vel maximus. Etiam varius aliquam ex, ut vehicula augue vulputate posuere. Curabitur suscipit ipsum justo, at eleifend mi faucibus sed. Aliquam accumsan felis a odio lacinia, eget semper risus pellentesque. Nam congue volutpat consectetur. Suspendisse ac sem a purus finibus hendrerit non lacinia nibh.
+						</p>
+						<p>
+							Etiam fermentum neque at quam mattis elementum. Integer sagittis ipsum vitae erat tempor, vitae cursus ligula vestibulum. Curabitur dictum consectetur odio. Morbi mauris enim, semper sed felis vitae, fringilla euismod nisl. Aenean a sagittis dolor. Suspendisse lacinia ultricies mauris, in cursus quam faucibus ac. Quisque vel vehicula enim. Aenean aliquam quam non diam volutpat, vitae gravida tellus egestas. Nullam aliquet, sapien vel vestibulum iaculis, nibh nulla sodales elit, a lacinia magna justo ac dui. Donec tempor molestie ante, ac porta lorem tempor ac. Nullam eros diam, consequat non vehicula a, porta eget felis. Nam neque elit, dapibus vitae enim vel, rhoncus commodo ex. In sodales congue nisi, ut cursus elit gravida id. Nullam in ex id metus viverra bibendum. Duis iaculis nibh vitae ante tempus, ornare consequat eros euismod. In neque nisl, faucibus quis erat eget, molestie volutpat purus.
+						</p>
+						<p>
+							Proin tristique, neque sit amet scelerisque vulputate, elit justo rhoncus leo, sed consequat nunc ante a purus. Nunc at cursus lectus, id faucibus nisi. Morbi leo elit, pulvinar et diam non, tincidunt pellentesque lacus. Maecenas augue metus, vulputate non gravida imperdiet, elementum in nisl. Etiam euismod ligula non posuere feugiat. Fusce auctor augue lorem, tincidunt suscipit risus blandit ut. Fusce vel risus hendrerit, gravida ex a, volutpat erat. Quisque feugiat mi mauris, id faucibus nisl suscipit a.
+						</p>
+						<p>
+							Duis egestas diam quis dignissim finibus. Phasellus vehicula rutrum risus sit amet sollicitudin. Vivamus vulputate, ipsum sed semper sagittis, eros sapien ullamcorper lorem, elementum sodales sem arcu eu sapien. Donec a sollicitudin nisi. Curabitur sit amet sapien ut libero tristique consectetur. Aenean a bibendum metus, nec mollis purus. Duis vulputate massa quis eleifend aliquet. Suspendisse potenti.
+						</p>
+						<p>
+							Nunc imperdiet scelerisque varius. Maecenas malesuada sed lacus eget ullamcorper. Praesent nec nunc at magna rhoncus convallis. Vivamus id dui id arcu facilisis tincidunt. Duis ac ligula magna. Nam pharetra suscipit convallis. Morbi ornare massa est, sit amet mollis eros eleifend et. Integer arcu mauris, sagittis a nisi a, viverra laoreet nisi. Morbi tristique non purus vel accumsan. Donec odio magna, vulputate nec sollicitudin nec, venenatis quis dui. Donec nec commodo tellus, id mattis leo. Proin at ligula mi. Ut faucibus dui erat, vitae ultricies nibh scelerisque a. Duis ut molestie tellus. Quisque tempor tellus sit amet ex condimentum, eget efficitur lorem venenatis. Sed at ligula feugiat, rutrum nibh vitae, hendrerit sem.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">Button</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Modal -->
+		<nav class="navbar navbar-default" id="navigbar">
+			<div>
+				<a href="http://panov.in.ua">
+					<img src="./Content/img/logo.png" title="Home" alt="Panov" style="height: 50px; border-radius: 5px 0px 0px 5px;" /> 
+				</a>
+				<button id="visiblemenu" type="button" class="btn btn-success" style="height: 100%;"></button>				
+				<div class="right-nav">
+					<a href="https://github.com/AlexPaskal/GoodView" class="btn btn-info" style="height: 100%;" ><font style="line-height: 27px;">Fork it on GitHub!</font></a>
+					<button type="button" class="btn btn-info" style="height: 100%;" data-toggle="modal" data-target="#myModal">Modal</button>
+					<button class="btn btn-default" style="height: 100%;">Login</button>
+					<button class="btn btn-primary" style="height: 100%;">Register</button>
+				</div>
+			</div>
+		</nav>
+		<div id="content">
+			<div id="left" class="content">
+				<div>
+					<div class="left-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum leo eros. Nulla interdum convallis velit, vitae consequat risus malesuada id.
+					</div>
+					<div class="left-text" style="background-color: #ffffff; color: #000000;">
+						Donec ultrices sapien condimentum, porttitor ex ac, posuere nisl. Ut nec est in libero pharetra lobortis.
+					</div>
+					<div class="left-text" style="background-color: #ff0000;">
+						Etiam pulvinar eu dolor non commodo. Donec et neque quis magna consectetur congue.
+					</div>
+					<a href="http://panov.in.ua" title="default" class="btn btn-default left-link">
+						DEFAULT
+					</a>
+					<a href="http://panov.in.ua" title="primary" class="btn btn-primary left-link">
+						PRIMARY
+					</a>
+					<a href="http://panov.in.ua" title="success" class="btn btn-success left-link">
+						SUCCESS
+					</a>
+					<a href="http://panov.in.ua" title="info" class="btn btn-info left-link">
+						INFO
+					</a>
+					<a href="http://panov.in.ua" title="warning" class="btn btn-warning left-link">
+						WARNING
+					</a>
+					<a href="http://panov.in.ua" title="danger" class="btn btn-danger left-link">
+						DANGER
+					</a>
+					<a href="http://panov.in.ua" title="link" class="btn btn-link left-link">
+						LINK
+					</a>
+					<div class="left-text" style="background-color: #00ff00; color: #ff00ff">
+						Curabitur semper velit egestas, vulputate massa a, commodo neque. Integer quis laoreet ligula. Nullam fringilla facilisis augue, id congue purus.
+					</div>
+					<div class="left-text" style="background-color: #ffffff; color: #000000">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at vulputate mi, quis dictum orci. In scelerisque elit tincidunt nulla cursus finibus. Integer lacinia tincidunt nulla, ac scelerisque velit efficitur et. Suspendisse imperdiet semper dui ullamcorper mollis. Vestibulum posuere id tortor fringilla consequat. Fusce pellentesque lectus eu nulla vestibulum pellentesque. Aenean vel ante enim. Sed luctus sit amet lectus sit amet lacinia. Maecenas interdum nunc nec ante condimentum venenatis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse scelerisque purus ac laoreet fringilla.
+						</p>
+						<p>
+							Aenean consequat, elit tempus consectetur dapibus, mauris lorem volutpat ante, ac pellentesque felis diam ut diam. Cras non volutpat ipsum. Aliquam nec tellus quam. Nam imperdiet vulputate lacus non molestie. Mauris ac justo sit amet lacus volutpat sollicitudin scelerisque sed nibh. Suspendisse convallis nulla in turpis imperdiet vehicula. Vivamus scelerisque aliquet felis, in consequat arcu imperdiet vel. Aliquam viverra purus ut sem ornare mollis. Aenean id accumsan turpis. Proin tortor mauris, sagittis a porta blandit, malesuada ut felis.
+						</p>
+					</div>
+					<div class="left-text">
+						&copy; Olexandr Panov 2016. <a href="https://opensource.org/licenses/MIT">MIT license</a>
+					</div>
+				</div>
+			</div>
+<!------  /LAYOUT  ------>
+<!------  VIEW  ------>
+			<div id="right" class="content">
+				<div>
+					<p>
+						Vivamus feugiat interdum sagittis. Aliquam non magna blandit, aliquet ipsum ac, luctus justo. Nunc non dignissim nulla. Curabitur a faucibus dui. Maecenas vel egestas magna, vitae mollis massa. Nullam finibus non ipsum ut varius. Phasellus tincidunt erat sed magna ultricies tincidunt in ultrices mauris. Suspendisse fringilla eu massa in sagittis. Curabitur placerat, augue a venenatis luctus, enim odio feugiat tortor, ac varius enim augue in eros. In feugiat dolor in metus volutpat malesuada.
+					</p>
+					<p>
+						Aenean tincidunt mi sollicitudin urna commodo ultrices. Aliquam lectus justo, tincidunt eget quam quis, dignissim euismod erat. Praesent hendrerit, mi sit amet dapibus laoreet, nunc ipsum ornare mi, interdum ultricies felis nisi ac lorem. Duis eu dolor sit amet velit viverra mollis tristique vitae sapien. Nunc dolor odio, placerat eget bibendum quis, laoreet in lorem. Maecenas viverra maximus nisi vitae placerat. Quisque risus metus, tempus a facilisis vitae, efficitur ac sapien. Etiam commodo, justo eu dapibus iaculis, odio arcu tincidunt neque, vitae lacinia odio urna eget est. Sed in nulla leo. Nulla facilisi. Nunc vel est arcu. Integer vitae arcu dapibus, ultrices orci eu, sollicitudin ligula. Sed eu velit non mauris congue pellentesque in id felis. Nam efficitur justo sem, ac accumsan magna feugiat vel. Aenean mauris leo, commodo at pharetra et, sagittis in tortor.
+					</p>
+					<p>
+						In lorem est, vestibulum sit amet libero vel, vulputate semper risus. Aenean iaculis ultricies est. Cras varius arcu egestas, ullamcorper est id, vehicula ex. Proin eu mauris orci. Nam eu nunc a sapien interdum vestibulum. Fusce faucibus tincidunt semper. Ut pretium sagittis arcu, eu vestibulum ex vehicula id. Sed ultricies hendrerit ligula at aliquet. Aliquam varius, ante eu tincidunt cursus, metus ante dignissim urna, id aliquam ex mauris sit amet leo. Nunc tincidunt massa eu turpis suscipit, in mollis purus sagittis. Vestibulum et commodo odio. Cras cursus efficitur pretium. Nulla facilisi. Nulla semper molestie ex ac dapibus. Suspendisse non erat ac sem ultrices euismod id sit amet mauris. Nulla nec erat eu mi luctus efficitur vel vel massa.
+					</p>
+					<p>
+						In egestas justo nec nisl blandit ultricies. Nulla pretium justo sed placerat dignissim. In odio tellus, faucibus sit amet lacinia vel, rutrum vel nibh. Sed id condimentum nisl. Integer sed dui in lacus tristique semper sed sit amet magna. In euismod quam ipsum, id ullamcorper tellus egestas vel. Nulla sagittis viverra eros eu hendrerit. Ut volutpat porta consequat. Quisque non est sagittis, aliquam velit id, dignissim dolor. In non augue non ante faucibus malesuada vitae at velit. Ut gravida, neque et ornare feugiat, massa sapien maximus dolor, ac auctor arcu massa in nunc. In at pharetra magna.
+					</p>
+					<p>
+						Ut volutpat felis eget condimentum consectetur. Curabitur commodo nunc quis suscipit elementum. Maecenas finibus velit elit, in vehicula enim fermentum vel. Etiam consectetur, turpis quis pharetra pellentesque, mauris justo pharetra nisi, finibus dictum arcu turpis sit amet augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie tellus ante, a bibendum neque molestie aliquet. Nulla sollicitudin aliquam libero, a feugiat mi porta a.
+					</p>
+					<p>
+						Aenean vehicula vulputate nunc non ultricies. Cras tempus sodales nunc. Donec sed pharetra enim. Suspendisse vulputate viverra dui, at imperdiet odio convallis id. Nullam lacus turpis, suscipit vel mattis egestas, pulvinar id neque. Vivamus ut sapien iaculis, convallis elit eget, viverra eros. In eget tincidunt neque. Duis a mauris sapien.
+					</p>
+					<p>
+						Pellentesque sit amet congue metus. Nulla at accumsan erat. Nulla mollis ipsum ante, eu pretium sem bibendum non. Nulla quis enim nec tortor rhoncus ultrices sed vel eros. Etiam quis ante interdum, mollis elit quis, pellentesque nulla. Ut sit amet dolor in purus accumsan porttitor. Duis molestie mattis ipsum, id accumsan ante tincidunt non.
+					</p>
+					<p>
+						Donec sed justo justo. Morbi volutpat hendrerit est, in tristique augue viverra euismod. Etiam mattis lacinia nisi, in venenatis neque posuere at. Cras posuere nisi vel lorem commodo eleifend. Nulla aliquam, sapien a tincidunt volutpat, ex purus lobortis felis, ac suscipit nulla metus vitae sapien. Suspendisse lobortis nisl ut pretium mattis. Nunc et mi quis urna interdum pharetra. Vivamus pellentesque a arcu sed iaculis. Suspendisse potenti. Praesent nec est orci. Morbi at maximus justo. Fusce nec ex eleifend, pellentesque libero vel, cursus urna.
+					</p>
+					<p>
+						Phasellus pellentesque imperdiet sapien at tristique. Etiam nec justo erat. Etiam id pellentesque risus. Phasellus condimentum imperdiet orci, id fringilla nulla. Fusce malesuada, justo ac semper mattis, ligula leo cursus urna, vitae rutrum metus arcu ac orci. Etiam vitae ultricies ipsum, at faucibus turpis. In hac habitasse platea dictumst. Aliquam sed urna non metus tristique rhoncus. Etiam quam ex, ornare molestie lectus quis, euismod sollicitudin lacus. Phasellus ac mattis odio. Etiam interdum, felis nec mattis condimentum, orci justo porttitor ex, a ultrices turpis purus eget ipsum. Integer nibh libero, rhoncus tristique nisi sed, varius luctus tellus. Nullam posuere sollicitudin augue id varius. Donec erat nunc, bibendum blandit quam eu, egestas dignissim ante. Vivamus sollicitudin tempor ligula, eu dictum nibh.
+					</p>
+					<p>
+						Etiam vestibulum venenatis pulvinar. Ut ante erat, sodales porttitor dolor non, placerat aliquet mauris. Nam lacinia ex et efficitur condimentum. Sed in turpis eget arcu tincidunt consectetur. Aliquam erat volutpat. Nunc luctus porta elit et gravida. Morbi varius iaculis odio quis fermentum.
+					</p>
+				</div>
+			</div>
+<!------  /VIEW  ------>
+<!------  LAYOUT  ------>
+		</div>
+	</body>
+</html>
+<!------  /LAYOUT  ------>
